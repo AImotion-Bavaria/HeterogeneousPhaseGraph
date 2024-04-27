@@ -1,0 +1,36 @@
+# Random state for reproducibility
+random_state: 42
+# Number of epochs
+epochs: 10
+data:
+  # Path to the data
+  data_path: 'path/to/rock_drill_data'
+  # Configurations used for training
+  train_s: [1]
+  # Configurations used for testing
+  test_s: [2, 3, 4, 5, 6, 7, 8]
+  # Batch size
+  batch_size: 128
+# Force reload of data or use saved version
+force_reload: False
+# Learning rate for Adam optimizer
+learning_rate: 0.001
+# Model type
+model_type: GNN  # GNN, SWING_CNN
+model_params:
+  GNN:
+    # Use CNNs for preprocessing
+    conv_pre: True  # True, False
+    # First layer size in GNN
+    gnn_layer_1: 512
+    # Second layer size in GNN
+    gnn_layer_2: 256
+    # Type of graph used
+    graph_type: hetero  # homo, hetero
+    # Type of phase identification (one -> no phases)
+    phases: acceleration  # acceleration, equidistant, one
+  SWING_CNN:
+    # Use domain adaption techniques from original SWING paper
+    domain_adap: True  # True, False
+# Verbose output
+verbose: True
