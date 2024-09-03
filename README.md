@@ -59,7 +59,7 @@ For running a subset of the experiments adjust ``config_files/config_experiments
 
 ### Average accuracies with standard deviations per model and train domain size
 
-| Model    |  $\|S\|$=2 |  $\|S\|$=2 |  $\|S\|$=3  |
+| Model    |  $\|S\|$=1 |  $\|S\|$=2 |  $\|S\|$=3  |
 |----------|:----------:|:----------:|:-----------:|
 | GFHeA    | 41.4 (6.4) | 49.1 (3.0) | 58.9 (6.2)  |
 | GFHeU    | 34.1 (4.8) | 40.3 (5.1) | 54.2 (5.6)  |
@@ -76,7 +76,7 @@ For running a subset of the experiments adjust ``config_files/config_experiments
 
 ### Detailed results for train domain size $|S| = 1$
 
-| Model    |   $\{1\}$  |   $\{5\}$   |   $\{8\}$  |
+| Model    |   $S=\lbrace1\rbrace$  |   $S=\lbrace5\rbrace$   |   $S=\lbrace8\rbrace$  |
 |----------|:----------:|:-----------:|:----------:|
 | GFHeA    | 36.4 (3.3) | 44.9 (9.3)  | 42.8 (6.7) |
 | GFHeU    | 29.6 (4.2) | 37.5 (5.7)  | 35.1 (4.5) |
@@ -93,7 +93,7 @@ For running a subset of the experiments adjust ``config_files/config_experiments
 
 ### Detailed results for train domain size $|S| = 2$
 
-| Model    |  $\{1,2\}$ |  $\{4,5\}$ |  $\{7,8\}$  |
+| Model    | $S=\lbrace1,2\rbrace$ |  $S=\lbrace4,5\rbrace$ |  $S=\lbrace7,8\rbrace$  |
 |----------|:----------:|:----------:|:-----------:|
 | GFHeA    | 37.9 (2.8) | 57.4 (2.9) | 52.1 (3.2)  |
 | GFHeU    | 34.9 (4.5) | 45.4 (4.7) | 40.6 (6.0)  |
@@ -110,7 +110,7 @@ For running a subset of the experiments adjust ``config_files/config_experiments
 
 ### Detailed results for train domain size $|S| = 3$
 
-| Model    | $\{1,2,3\}$ | $\{4,5,6\}$ | $\{6,7,8\}$ |
+| Model    | $S=\lbrace1,2,3\rbrace$ | $S=\lbrace4,5,6\rbrace$ | $S=\lbrace6,7,8\rbrace$ |
 |----------|:-----------:|:-----------:|:-----------:|
 | GFHeA    | 51.0 (8.7)  | 67.0 (3.7)  | 58.6 (6.1)  |
 | GFHeU    | 50.1 (3.4)  | 64.9 (2.7)  | 47.8 (10.6) |
